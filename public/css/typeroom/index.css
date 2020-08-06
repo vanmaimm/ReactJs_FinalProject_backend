@@ -1,0 +1,32 @@
+table{
+
+    border:solid 0.5px black;
+    width:50%;
+    margin: auto;
+
+}
+table tr td{
+    padding:10px
+}
+table tr th{
+    text-align: center;
+}
+table tr td, table tr th{
+    border:solid 1px black;
+}
+#create{
+    width: 50%;
+    margin: auto;
+}
+form div{
+    padding: 10px;
+}
+.add_typeroom{
+    width: 50%;
+    margin: auto;
+    border: solid 0px white !important;
+}
+
+input{
+    width: 100%;
+}

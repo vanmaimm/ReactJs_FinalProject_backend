@@ -1,0 +1,17 @@
+.card{
+    width:400px;
+     border:solid 1px black;
+     padding:5px;
+     margin:auto;
+}
+.card-header{
+    height:50px;
+}
+.card-header h2{
+ margin:auto;text-align: -webkit-center;
+}
+.card-body .input-group input{
+ width:85%;
+ height:30px;
+ margin-bottom:5px;
+}

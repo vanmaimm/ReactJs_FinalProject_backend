@@ -1,0 +1,17 @@
+table,th,td{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+th,td{
+    text-align: left;
+    padding: 10px;
+}
+td input, textarea, select{
+    width: 100%;
+}
+
