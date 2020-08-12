@@ -24,12 +24,7 @@
                         <tr>
                             <th>#</th>
                             <th> Số phòng</th>
-                            <th>Hình ảnh </th>
                             <th>Loại phòng</th>
-                            <th>Diện tích</th>
-                            <th>Giá</th>
-                            <th>Mô tả</th>
-                            <th>Số lượng người</th>
                             <th colspan="2">.</th>
                         </tr>
                     </thead>
@@ -38,12 +33,7 @@
                         <tr>
                             <td >{{$room->id}}</td>
                             <td>{{$room->room_number}}</td>
-                            <td><img src="/storage/{{$room->image}}" alt="" style="width:100px;height:100px"></td>
                             <td>{{$room->typerooms->name}}</td>
-                            <td>{{$room->area}}</td>
-                            <td>{{$room->price_per_day}}</td>
-                            <td>{{$room->description}}</td>
-                            <td>{{$room->max_person}}</td>
                             <td>
                                 <form action="/admin/room/edit/{{$room->id}}" method="get">
                                     <button class="edit">

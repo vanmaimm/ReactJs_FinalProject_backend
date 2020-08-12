@@ -29,10 +29,6 @@
                         <td><input type="text" name="room_number" value="{{$room->room_number}}"></td>
                     </tr>
                     <tr>
-                        <td>Hình ảnh</td>
-                        <td><input type="file" name="img" value="{{$room->image}}"></td>
-                    </tr>
-                    <tr>
                         <td>Loại phòng</td>
                         <td><select class="control" name="typeroom">
                                 <option value="">Chọn loại</option>
@@ -45,22 +41,7 @@
                                 @endforeach
                             </select></td>
                     </tr>
-                    <tr>
-                        <td>Diện tích</td>
-                        <td><input type="text" name="area" value="{{$room->area}}" ></td>
-                    </tr>
-                    <tr>
-                        <td>Giá</td>
-                        <td><input type="text" name="price" value="{{$room->price_per_day}}" ></td>
-                    </tr>
-                    <tr>
-                        <td>Mô tả</td>
-                        <td> <textarea name="description" id="" cols="30" rows="10" value="">{{$room->description}}</textarea></td>
-                    </tr>
-                    <tr>
-                        <td>Số lượng người</td>
-                        <td><input type="text" name="person" value="{{$room->max_person}}"></td>
-                    </tr>
+
                     <tr>
                         <td colspan=2><button>Edit</button></td>
                     </tr>

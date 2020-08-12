@@ -28,5 +28,7 @@ Route::delete("/admin/room/delete/{id}", "Admin\RoomController@destroy");
 Route::get("/auth/logout","Admin\LoginController@logout");
 Route::get("/admin/typeroom","Admin\TyperoomController@index");
 Route::post("/admin/typeroom","Admin\TyperoomController@store");
+Route::get("/admin/typeroom/edit/{id}","Admin\TyperoomController@edit");
+Route::patch("/admin/typeroom/edit/{id}","Admin\TyperoomController@update");
 Route::delete("/admin/typeroom/delete/{id}","Admin\TyperoomController@destroy");
 

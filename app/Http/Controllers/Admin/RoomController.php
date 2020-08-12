@@ -34,20 +34,10 @@ class RoomController extends Controller
 
     function update($id, Request $request){
         $room_number=$request->input("room_number");
-        $img = $request->file("img")->store("public");
         $typeroom= $request->input("typeroom");
-        $price = $request->input("price");
-        $description = $request->description;
-        $quantity = $request->person;
-        $area = $request->area;
         $room = Room::find($id);
         $room->room_number=$room_number;
-        $room->image=$img;
         $room->typeroom=$typeroom;
-        $room->area=$area;
-        $room->price_per_day=$price;
-        $room->description=$description;
-        $room->max_person=$quantity;
         $room->save();
         return redirect("/admin/room");
 
@@ -62,20 +52,10 @@ class RoomController extends Controller
     }
     function store(Request $request){
         $room_number=$request->input("room_number");
-        $img = $request->file("img")->store("public");
         $typeroom= $request->input("typeroom");
-        $price = $request->input("price");
-        $description = $request->description;
-        $quantity = $request->person;
-        $area= $request->area;
         $room= new Room();
         $room->room_number=$room_number;
-        $room->image=$img;
         $room->typeroom=$typeroom;
-        $room->area=$area;
-        $room->price_per_day=$price;
-        $room->description=$description;
-        $room->max_person=$quantity;
         $room->save();
         redirect("/admin/room");
     }
