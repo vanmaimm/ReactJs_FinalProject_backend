@@ -12,4 +12,9 @@ class TyperoomController extends Controller
        $typerooms=Typeroom::all();
        return response()->json($typerooms);
    }
+   function detail($id){
+       $typeroom= Typeroom::find($id);
+       return response()->json($typeroom);
+
+   }
 }

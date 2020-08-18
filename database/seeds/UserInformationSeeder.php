@@ -16,7 +16,6 @@ class UserInformationSeeder extends Seeder
             'name'=>"Mai Thi My Van",
             'address'=>"99 To Hien Thanh, Da Nang",
             'phone_number'=>"0906490836",
-            "email"=>"van.mai21@student.passerellesnumeriques.org"
         ]);
     }
 }

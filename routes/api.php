@@ -22,3 +22,6 @@ Route::post("/auth/register","Auth\RegisterController@store");
 Route::get("/profile","User\ProfileController@getProfile");
 Route::post("/checkPass","User\ProfileController@checkPassword");
 Route::get("/typeroom","User\TyperoomController@display");
+Route::get("/typeroom/detail/{id}","user\TyperoomController@detail");
+// Route::post('/forgot_password', 'Auth\RessetPasswordController@forgot_password');
+// Route::post('/change_password', 'Auth\RessetPasswordController@change_password');

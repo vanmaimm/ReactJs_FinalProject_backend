@@ -29,7 +29,11 @@
                             <th>Giá</th>
                             <th>Mô tả</th>
                             <th>Số lượng người</th>
-                            <th colspan="2"><button id="add">Add</button></th>
+                            <th colspan="2">
+                                <form action="/admin/typeroom/add">
+                                    <button>Add</button>
+                                </form>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,7 +69,7 @@
                     </tbody>
                 </table>
             </div>
-            <div id="create" style="display:none">
+            <!-- <div id="create" style="display:none">
                 <br>
                 <hr>
                 <form action="/admin/typeroom" method="POST" role="form">
@@ -107,7 +111,7 @@
             <script language="javascript">
             document.getElementById("add").onclick = function() {
                 document.getElementById("create").style.display = 'block';
-            };
+            }; -->
             </script>
         </div>
     </div>

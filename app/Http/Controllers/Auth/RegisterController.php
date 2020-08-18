@@ -27,6 +27,7 @@ class RegisterController extends Controller
         $user = new User();
         $user->username=$username;
         $user->password=$hashPassword;
+        $user->email=$email;
         $user->save();
 
         $inforUser = new UserInformation();
@@ -34,7 +35,6 @@ class RegisterController extends Controller
         $inforUser->name=$name;
         $inforUser->address=$address;
         $inforUser->phone_number=$phone;
-        $inforUser->email=$email;
         $inforUser->save();
 
         $credentials = $request->only('username', 'password');

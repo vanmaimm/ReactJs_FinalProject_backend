@@ -35,10 +35,13 @@ class RoomController extends Controller
     function update($id, Request $request){
         $room_number=$request->input("room_number");
         $typeroom= $request->input("typeroom");
+
         $room = Room::find($id);
+
         $room->room_number=$room_number;
         $room->typeroom=$typeroom;
         $room->save();
+
         return redirect("/admin/room");
 
     }

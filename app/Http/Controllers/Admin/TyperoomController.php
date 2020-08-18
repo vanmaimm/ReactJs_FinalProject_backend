@@ -12,9 +12,12 @@ class TyperoomController extends Controller
         $typerooms=Typeroom::all();
         return view("typeroom.index",["typerooms"=>$typerooms]);
     }
+    function create(){
+        return view("typeroom.insert");
+    }
     function store(Request $request){
         $name = $request->typeroom;
-       $img = $request->file('img')->store("public");
+        $img = $request->file('img')->store("public");
         $price = $request->input("price");
         $description = $request->description;
         $quantity = $request->person;
@@ -22,14 +25,12 @@ class TyperoomController extends Controller
         $typeroom= new Typeroom();
         $typeroom->name=$name;
         $typeroom->image=$img;
-        $typeroom->typeroom=$typeroom;
         $typeroom->area=$area;
         $typeroom->price_per_day=$price;
         $typeroom->description=$description;
         $typeroom->max_person=$quantity;
         $typeroom->save();
        return redirect("/admin/typeroom");
-    echo $img;
     }
     function edit($id){
         $typeroom=Typeroom::find($id);
